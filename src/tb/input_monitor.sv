@@ -36,9 +36,7 @@ class input_monitor extends uvm_monitor;
       drv2mon = trans::type_id::create("drv2mon");
 
       collect_input_monitor();
-
       `uvm_info("INPUT_MONITOR", $sformatf("Input Monitor\n%s", drv2mon.sprint()), UVM_LOW)
-
       inp_monitor_port.write(drv2mon);
 
     end
